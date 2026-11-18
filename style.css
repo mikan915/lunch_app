@@ -1,0 +1,131 @@
+body {
+  font-family:"Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  background-color:#FAB27B;
+  color:#57462B;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.container{
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 32px 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+h1{
+  color:#e67e22;
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.subtitle{
+  color: #57462B;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.select-group {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 14px;
+  color: #57462B;
+  margin-top: 8px;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  text-align: center;
+  text-align-last: center;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fafafa;
+  color: #57462B;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: #e67e22;
+}
+
+#assessment {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #e67e22;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#assessment:hover {
+  background-color: #d35400;
+}
+
+.hidden {
+  display: none;
+}
+
+.result-card {
+  margin-top: 28px;
+  padding: 24px 20px;
+  background-color: #fff4e6;
+  border: 2px solid #f5cba7;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.result-label {
+  font-size: 13px;
+  color: #888888;
+  margin-bottom: 8px;
+}
+
+#menu-name {
+  font-size: 22px;
+  color: #d35400;
+  margin-bottom: 12px;
+}
+
+#menu-desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444444;
+  margin-bottom: 16px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #e67e22;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 14px;
+  border-radius: 999px;
+}
+
+#tweet-area {
+  margin-top: 18px;
+}
