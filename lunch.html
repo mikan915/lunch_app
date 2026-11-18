@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>今日のランチ診断</title>
+</head>
+<body>
+  <div class="container">
+    <h1>今日のランチ</h1>
+    <p class="subtitle">予算と今の気分を選んで診断しよう！</p>
 
+    <div class="controls">
+      <div id="start-area"></div>
+      <div class="select-group">
+        <label for="budge">予算</label>
+        <select id="budge">
+          <option value="all">指定なし</option>
+          <option value="one">ワンコイン(500円以下)</option>
+          <option value="mid">1000円以上</option>
+        </select>
+
+        <label for="mood">今の気分</label>
+        <select id="mood">
+          <option value="all">何でもOK</option>
+          <option value="heavy">ガッツリ系</option>
+          <option value="light">さっぱり系</option>
+        </select>
+      </div>
+      <button id="assessment">診断する！</button>
+
+      <div id="result-card" class="result-card hidden">
+        <p class="result-label">今日のおすすめランチは</p>
+        <h2 id="menu-name"></h2>
+        <p id="menu-desc"></p>
+        <span id="menu-tag" class="tag"></span>
+
+        <div id="tweet-area"></div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="lunch.js"></script>
+</body>
+</html>
